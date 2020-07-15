@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-offset-3 col-sm-6">
+            <div class="posts-container">
+                <h2>Post</h2>
+                <div class="body">
+                    <ul class="posts">
+                        <li class="post">
+                            <div style="padding: 10px 0;">
+                                <div class="input-group flex-nowrap" style="padding: 10px;">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="addon-wrapping-Id">Post Id</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Id" aria-label="Id"
+                                        aria-describedby="addon-wrapping-Id" [(ngModel)]="postId">
+                                </div>
+                                <div class="input-group flex-nowrap" style="padding: 10px;">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="addon-wrapping-Title">Post Title</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Title" aria-label="Title"
+                                        aria-describedby="addon-wrapping-Title" [(ngModel)]="postTitle">
+                                </div>
+                                <div class="input-group flex-nowrap" style="padding: 10px;">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="addon-wrapping-Body">Post Body</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Body" aria-label="Body"
+                                        aria-describedby="addon-wrapping-Body" [(ngModel)]="postBody">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-add" (click)='onUpdate()'>Update</button>
+                    <button type="button" class="btn btn-delete" (click)='onDelete()'>Delete</button>
+                    <button type="button" class="btn btn-cancel" [routerLink]="['']">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
